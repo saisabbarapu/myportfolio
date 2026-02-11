@@ -1,0 +1,59 @@
+:root {
+  /* Dark theme (default) */
+  --bg: #0a0814;
+  --surface: #120c1f;
+  --text: #efeaf7;
+  --muted: #b6adc9;
+  --brand: #8b7dff;
+  --panel-1: rgba(255,255,255,0.06);
+  --panel-2: rgba(255,255,255,0.02);
+  --border: rgba(255,255,255,0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(139,125,255,0.28) 0%, transparent 45%),
+    radial-gradient(900px 500px at 10% -20%, rgba(139,125,255,0.18) 0%, transparent 40%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+html { scroll-behavior: smooth; }
+
+[data-theme="light"] {
+  /* Light theme */
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --text: #20163b;
+  --muted: #5a4f73;
+  --brand: #5a4dff;
+  --panel-1: rgba(0,0,0,0.05);
+  --panel-2: rgba(0,0,0,0.025);
+  --border: rgba(0,0,0,0.12);
+}
+
+a {
+  color: var(--brand);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+
+p {
+  margin: 0.25rem 0 0.75rem;
+  color: var(--muted);
+}
